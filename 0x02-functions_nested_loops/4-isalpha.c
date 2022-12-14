@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - checking for alphabetic character
+ * _isalpha - checking for char character
  * @c: char to be reviewed
  *
  * Return (1) if char is lower or upper, (0) otherwise
