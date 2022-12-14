@@ -4,7 +4,7 @@
  * _isalpha - checking for char character
  * @c: char to be reviewed
  *
- * Return (1) if char is lower or upper, (0) otherwise
+ * Return: 1 if char is lower or upper, 0 otherwise
  */
 
 int _isalpha(int c)
