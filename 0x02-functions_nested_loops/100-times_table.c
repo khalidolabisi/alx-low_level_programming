@@ -12,30 +12,30 @@ void print_times_table(int l)
 
 	if (l >= 0 && l <= 15)
 	{
-		for (n = 0; n <= l; n++)
-		{
-			_putchar('0');
-			for (m = 1; m <= l; m++)
-			{
-				_putchar(',');
-				_putchar(' ');
-				p = n * m;
-				if (p <= 99)
-					_putchar(' ');
-				if (p <= 9)
-					_putchar(' ');
-				if (p >= 100)
-				{
-					_putchar((p / 100) + '0');
-					_putchar(((p / 10)) % 10 + '0');
-				}
-				else if (p <= 99 && p >= 18)
-				{
-					_putchar((p / 10) + '0');
-				}
-				_putchar((p % 10) + '0');
-			}
-			_putchar('\n');
-		}
+	for (n = 0; n <= l; n++)
+	{
+	_putchar('0');
+	for (m = 1; m <= l; m++)
+	{
+	_putchar(',');
+	_putchar(' ');
+	p = n * m;
+	if (p <= 99)
+	_putchar(' ');
+	if (p <= 9)
+	_putchar(' ');
+	if (p >= 100)
+	{
+	_putchar((p / 100) + '0');
+	_putchar(((p / 10)) % 10 + '0');
+	}
+	else if (p <= 99 && p >= 18)
+	{
+	_putchar((p / 10) + '0');
+	}
+	_putchar((p % 10) + '0');
+	}
+	_putchar('\n');
+	}
 	}
 }
