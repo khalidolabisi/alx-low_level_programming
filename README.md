@@ -1,1 +1,1 @@
-tarting my journey on C
+Starting my journey on C
