@@ -9,12 +9,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int d = 0, j = 0, m = 0;
+	int r, j = 0, t = 0;
 
-	for (d = 0; d < size; d++)
+	for (r = 0; r < size; r++)
 	{
-		j += *(a + (size * d + 1));
-		m += *(a + (size * d + size - 1 - d));
+		j += a[r];
+		t += a[size - r - 1];
+		a += size;
 	}
-	printf("%d, %d\n", j, m);
+	printf("%d, ", j);
+	printf("%d\n", t);
 }
