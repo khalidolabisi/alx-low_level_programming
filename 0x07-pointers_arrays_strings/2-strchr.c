@@ -2,21 +2,20 @@
 
 /**
  * _strchr - locates a character in string
- * @c: occurence of the character
- * @s: in the string
- * Return: a pointer to the first occurence of the character
+ * @c: character to be located
+ * @s: string to be searhed
+ * Return: If c is found - a pointer to the first occurence
+ * If c is not found - NULL
  */
 
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	int x;
+
+	for (x = 0; s[x] >= '\0'; x++)
 	{
-		if (*s != c)
-			s++;
-		else
-			return (s);
+		if (s[x] == c)
+			return (s + x);
 	}
-	if (c == '\0')
-		return (s);
-	return (NULL);
+	return('\0');
 }
